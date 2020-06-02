@@ -1,0 +1,626 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	color : black;
+	text-decoration: none;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+	box-sizing: border-box;
+	-moz-box-sizing : border-box;
+	-webkit-box-sizing : border-box;
+	-O-box-sizing : border-box;
+}
+html{
+	font-size: 0.625rem;
+}
+body{
+
+	font-family: "helvetica neue condense",Arial,Helvetica,sans-serif;
+	font-size: 1.8rem;
+}
+
+.login .wrapper{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.login .main-header{
+	background-color : #3B5998 ;
+	margin-bottom: 80px;
+}
+.login .title{
+	text-align: center;
+	display: block;
+	line-height: 4;
+	font-size: 3rem;
+	color: white;
+	text-transform: uppercase;
+
+}
+.login label{
+	margin: 20px 0;
+	display: block;
+	text-align: center;
+}
+.login .btn{
+	float: right;
+	margin: 40px 0;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+.home{
+	color: #8a8a8a;
+}
+.home .alert{
+	display: block;
+	width: 100%;
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bcdff1;
+	line-height: 1.5;
+	padding: 35px;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+
+}
+.home .alert a{
+	text-decoration: underline;
+
+}
+.home .wrapper{
+	
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.home .admin-board{
+
+	transition:  all, 0.5s;
+	display: block;
+	width: 250px;
+	margin : 20px 0;
+	background-color : #3ca834;
+	border: 2px solid #c2c2c2;
+	color : white;
+	line-height: 2.5;
+	text-align : center;
+	font-size: 1.8rem;
+	 
+}
+.home .admin-board:hover{
+	transition:  all, 0.5s;
+	background-color: lightblue;
+}
+.home .container{
+
+	width: 50%;
+	display: inline-block;
+
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 1.5rem;
+}
+.home .container .field{
+	min-width: 300px;
+	border: 2px solid #c4c4c4;
+	
+	min-height:  25px;
+	display: block;
+	float: right;
+	
+}
+.home .container label{
+	text-align: left;
+	padding-top: 0px;
+	float: left;
+
+}
+.home .title-form{
+	vertical-align: top;
+	display: inline-block;
+	width: 45%;
+	color: #87878a;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+}
+.home .under{
+	display: block;
+}
+.home .fade{
+	opacity: 0;
+}
+/*------------------------------------------------------ header -------------------------------*/
+.home #title{
+
+	font-weight: bold;
+	font-size: 4.5rem;
+	color: #87878a;
+}
+.home #title span{
+	color: #364291;
+}
+.home .main-header {
+	padding: 10px 0;
+	width: 100%;
+	border-bottom: 2px solid #bdbdbd ;
+}
+.hidden{
+	display: none;
+	visibility: hidden;
+}
+/*-----------------------------------destinataire--------------------------------------*/
+.home .dest{
+	padding: 20px 0;
+	border-bottom: 2px solid #bdbdbd ;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 1.5rem;
+}
+
+
+.home .dest .add_receive_button{
+	
+
+	padding: 0;
+	
+	float: right;
+
+	background: none;
+	border: none;
+	color: #374394;
+	font-size: 3rem;
+	font-weight: lighter;
+
+	
+}
+.home .dest .add_receive_button:hover{
+	cursor: pointer;
+	
+	background: lightgrey;
+}
+
+/*---------------------------------------test ------------------------------------*/
+.home .test{
+	padding: 20px 0;
+	border-bottom: 2px solid #bdbdbd ;
+	width: 100%;
+
+}
+
+/*-------------------------------en tête--------------------------------*/
+.home .header{
+	border-bottom: 2px solid #bdbdbd ;
+	padding: 20px 0;
+	width: 100%;
+}
+.home .header .title-form{
+	width: 45%;
+	padding: 50px 0;
+	vertical-align: top;
+}
+.home .header .container {
+	width: 50%;
+	
+
+	
+}
+.home .header .container .field{
+	margin-top: 15px;
+	display: block;
+	float: right;
+	
+
+}
+.home .header .container label{
+	padding-top: 20px;
+	float: left;
+	clear: both;
+}
+
+/*---------------------------type mail----------------------*/
+
+.home .mail-type{
+
+	padding: 20px 0;
+	width: 100%;
+}
+.home .mail-type .title-form{
+	padding: 25px 0;
+	vertical-align: top;
+}
+
+.home .mail-type .container{
+	padding-top: 40px;
+	text-align: left;
+	vertical-align: top;
+
+	
+
+}
+.home .mail-type .container {
+	margin-right: 10px;
+}
+.home .mail-type .container .warning{
+	letter-spacing: 0;
+	padding-top: 20px;
+	color: red;
+	display: block;
+	line-height: 1.5;
+	text-align: left;
+	opacity: 0;
+	
+}
+/*-----------------------------------------------mail----------------------------------*/
+.home .mail{
+	border-bottom: 2px solid #bdbdbd ;
+	padding-bottom: 40px;
+	width: 100%;
+}
+.home .mail .title-form{
+	padding: 50px 0;
+
+}
+.home .mail .file {
+	margin-top: 35px;
+	
+	display: block;
+
+	
+}
+.home .mail  label{
+	padding-top: 40px;
+
+}
+
+.home .mail label{
+	display: block;
+	margin:0px 20px 0px 0px;
+
+}
+
+.home .mail .validate{
+	transition : all, 0.5s;
+	border: 2px solid #c2c2c2;
+	margin: 20px auto;
+	display: block;
+	text-align: center;
+	background-color: #e6027b;
+	color: white;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	min-width: 100px;
+	text-transform: uppercase;
+}
+.home .mail .validate:hover{
+	transition : all, 0.5s;
+	background-color: green;
+	cursor: pointer;
+}
+.home .atach{
+	
+	width: 50%;
+	margin : 30px 0;	
+}
+.home .atach img{
+	float: left;
+	margin-right: 5px;
+	text-align: center;
+	
+}
+
+/*----------------------------------send--------------*/
+
+.home .send{
+	padding: 20px 0;
+	width: 100%;
+	border-bottom: 2px solid #bdbdbd ;
+
+}
+.home .send p{
+	color: #435099;
+	display: inline-block;
+	line-height: 1.5;
+}
+.home .send button{
+	transition : all, 0.5s;
+	border: 2px solid #c2c2c2;
+	text-transform: uppercase;
+	margin: 0 auto;
+	display: block;
+	float: right;
+	background-color: #e6027b;
+	color: white;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	min-width: 100px;
+	
+}
+.home .send button:hover{
+	transition : all, 0.5s;
+	background-color: green;
+	cursor: pointer;
+}
+/*------------------------------send renderer-------------*/
+.home .send-renderer{
+	padding: 20px 0;
+	width: 100%;
+	border-bottom: 2px solid #bdbdbd ;
+
+}
+.home .send-renderer p{
+
+	color: #435099;
+	line-height: 1.5;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+												dashboard						
+--------------------------------------------------------------------------------------------------------------------------------*/
+
+.dashboard {
+	
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.dashboard #title{
+	color: white;
+	padding : 40px 0 ;
+	
+}
+.dashboard-header{
+	background-color : #3B5998 ;
+}
+
+
+.dashboard .title{
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	padding : 40px 0 ;
+	
+}
+.dashboard a{
+	text-decoration: none;
+	color: black;
+}
+.dashboard form a:hover{
+	display: block;
+	background-color: lightgrey;
+}
+.dashboard .row{
+	text-align: center;
+}
+.dashboard .rowData{
+	text-align: center;
+	border-top: 1px solid grey;
+	padding : 10px 0 ;
+}
+
+.partial-nav{
+	font-size: 2.1rem;
+	width: 33.3%;
+	margin: 0 auto;
+	
+}
+.partial-nav li{
+	padding: 15px;
+	text-align: center;
+
+	display: inline-block;
+
+}
+.partial-nav li:hover{
+	transition: all,1s;
+	background-color: lightblue;
+	
+
+
+}
+.partial-nav li a{
+	color: black;
+	display: block;
+	line-height: 1.5;
+	
+}
+
+.dashboardList {
+	
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.dashboardList #title{
+	color: white;
+	padding : 40px 0 ;
+	
+}
+.dashboardList .down{
+	display: inline;
+	background: inherit;
+}
+.dashboardList .down:hover{
+	display: inline;
+	background: inherit;
+}
+.dashboardList .title{
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	padding : 40px 0 ;
+	
+}
+.dashboardList .back-page{
+	margin-top: 20px;
+	color: black;
+}
+.dashboardList form a:hover{
+	display: block;
+	background-color: lightgrey;
+}
+.dashboardList .row{
+	text-align: center;
+}
+.dashboardList .rowData{
+	text-align: center;
+	border-top: 1px solid grey;
+	padding : 10px 0 ;
+}
+
+.dashboardList .field{
+	margin: 20px 0;
+	
+}
+.dashboardList p{
+	line-height: 2;
+	
+}
+.dashboardList .row{
+	text-align: center;
+}
+.dashboardList .rowData{
+	text-transform: none;
+	text-align: center;
+	border-top: 1px solid grey;
+	padding : 10px 0 ;
+}
+.dashboardList .editable{
+
+}
+.dashboardList .editable:hover{
+	background-color: lightblue;
+	cursor: pointer;
+}
+.dashboardList .back-page{
+
+	color : blue;
+	
+}
+.dashboardList .back-page:hover{
+	background : none;
+	color : lightblue;
+	
+}
+.dashboardListPannel label{
+	width: 50%;
+	display: block;
+	margin:  0 auto;
+	text-transform: center;
+}
+
+.dashboardListPannel .title{
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	padding : 40px 0 ;
+	
+
+}
+
+.dashboardListPannel .row{
+	text-align: center;
+}
+.dashboardListPannel .rowData{
+	text-transform: none;
+	text-align: center;
+	border-top: 1px solid grey;
+	padding-top : 10px
+}
+
+.dashboardListPannel .libelle{
+	margin: 20px auto;
+	width: 50%;
+}
+.dashboardListPannel .exel_import{
+	margin: 20px 0;
+	width: 30%;
+	padding: 10px 0;
+	display: block;
+}
+.dashboardListPannel .exel_import::-webkit-file-upload-button {
+  visibility: hidden;
+
+}
+.dashboardListPannel .exel_import::before {
+  content: 'IMPORT EXCEL';
+
+  background-color : #3ca834;
+  border: 2px solid #c2c2c2;
+  color : white;
+  line-height: 2;
+  font-size: 1.8rem;
+  padding: 5px 8px;
+
+
+
+
+}
+/*.dashboardListPannel .prenom{
+	margin: 20px auto;
+	width: 50%;
+}
+.dashboardListPannel .nom{
+	margin: 20px auto;
+	width: 50%;
+}
+.dashboardListPannel .email{
+	margin: 20px auto;
+	width: 50%;
+}
+.dashboardListPannel .back-page{
+	display: block;
+	width: 20%;
+	margin : 20px auto;
+	
+}*/
